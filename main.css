@@ -1,0 +1,490 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ====================================================================
+  Header
+  ====================================================================
+*/
+header nav img {
+  margin: -50px 10px 10px 60px;
+  max-height: 23px;
+}
+header nav ul {
+  background: white;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  font-size: 15px;
+}
+header nav ul ul {
+  display: none;
+  z-index: 2;
+}
+header nav ul li:hover > ul {
+  display: block;
+}
+header nav ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+header nav ul li {
+  float: left;
+}
+header nav ul li:hover {
+  background: #e5e5e5;
+}
+header nav ul li:hover a {
+  color: #757575;
+  text-decoration: none;
+}
+header nav ul li a {
+  display: block;
+  padding: 25px 40px;
+  color: #757575;
+  text-decoration: none;
+}
+header nav ul ul {
+  background: #e5e5e5;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+}
+header nav ul ul li {
+  float: none;
+  position: relative;
+  width: 270px;
+}
+header nav ul ul li a {
+  padding: 15px 40px;
+  color: #fff;
+}
+header nav ul ul li a:hover {
+  background: #d9d9d9;
+}
+header nav ul ul ul {
+  background: #d9d9d9;
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+header nav ul ul ul li a:hover {
+  background: #c3c1c1;
+}
+header nav input {
+  width: 244px;
+  height: 36px;
+  margin: 0 -45px 0 10%;
+  transform: translateY(-30px);
+  padding: 0 0 0 40px;
+  border: 1px solid #A9A9A9;
+  font-family: Tahoma,Verdana,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 1.5;
+  background-image: url(images/lupa.jpg);
+  background-repeat: no-repeat;
+  outline: none;
+}
+header img {
+  transform: scale(1.25, 1.25);
+}
+
+@media only screen and (max-width: 1200px) {
+  header nav input {
+    margin: 0 -25px 0 -10px;
+  }
+  header nav ul li a {
+    padding: 25px 20px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header nav input {
+    margin: 0 -55px 0 -3px;
+    width: 170px;
+    font-size: 14px;
+  }
+  header nav ul li a {
+    padding: 25px 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  header nav img {
+    margin: -50px 10px 10px 10px;
+    max-height: 23px;
+  }
+  header nav input {
+    margin: 0;
+    width: 100px;
+    font-size: 12px;
+  }
+  header nav ul li a {
+    padding: 20px 5px;
+  }
+  header nav ul ul li a {
+    padding: 5px 10px;
+    color: #fff;
+  }
+  header nav ul ul li {
+    width: 140px;
+  }
+}
+/*
+  ====================================================================
+  Main Dropbox
+  ====================================================================
+*/
+.dropbox {
+  background-image: url("images/dropbox_main.jpg");
+  background-repeat: no-repeat;
+  height: 650px;
+  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  color: #47525d;
+}
+.dropbox h1 {
+  margin-top: 80px;
+  font-size: 44px;
+  font-weight: 200;
+  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+}
+.dropbox h4 {
+  margin: 20px 0 50px 0;
+  font-size: 22px;
+  font-weight: 100;
+}
+.dropbox .free_use {
+  background: #0071e0;
+  color: white;
+  font-size: 19.13043px;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  padding: 16px 21px;
+  cursor: pointer;
+}
+.dropbox .free_use:hover {
+  background: #3398EA;
+}
+.dropbox h6 {
+  margin-top: 30px;
+  font-size: 14.66667px;
+}
+.dropbox h6 a {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+  .dropbox {
+    margin: 0 auto;
+  }
+  .dropbox h1 {
+    margin-top: 30px;
+    font-size: 29.33333px;
+  }
+  .dropbox h4 {
+    font-size: 16.92308px;
+  }
+  .dropbox .free_use {
+    font-size: 12.75362px;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  .dropbox h6 {
+    font-size: 12.22222px;
+  }
+}
+/*
+  ====================================================================
+  Form
+  ====================================================================
+*/
+.forms {
+  margin-top: -90px;
+  background-color: #323A45;
+  height: 500px;
+  text-align: center;
+}
+.forms h2 {
+  margin-top: -10px;
+  padding: 150px 0 50px 0;
+  font-size: 31.42857px;
+  color: white;
+  font-weight: 300;
+  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+}
+.forms input {
+  width: 280px;
+  height: 63px;
+  padding-left: 40px;
+  background: white;
+  line-height: 1em;
+  border-radius: 3px;
+  margin-right: 10px;
+  border: 1px solid #d4d7da;
+  font-size: 17.6px;
+  background-image: url(images/invision.png);
+  background-repeat: no-repeat;
+  outline: none;
+}
+.forms .ico-user {
+  background-position: 0 -75px;
+}
+.forms .ico-email {
+  background-position: 0 13px;
+}
+.forms .ico-password {
+  background-position: 0 -32px;
+}
+.forms .butn {
+  background: #f42156;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  line-height: 1em;
+  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 20px 32px;
+}
+.forms .butn:hover {
+  text-decoration: none;
+  color: white;
+  background: #ff3366;
+}
+.forms h6 {
+  line-height: 1.8em;
+  color: #747c83;
+  font-family: "Open Sans", "lucida grande", "Segoe UI", arial, verdana, "lucida sans unicode", tahoma, sans-serif;
+  margin-top: 30px;
+}
+.forms h6 a {
+  color: #747c83;
+  text-decoration: underline;
+}
+.forms h6 a:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1180px) {
+  .forms input {
+    width: 230px;
+  }
+  .forms .butn {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .forms {
+    margin-top: -100px;
+  }
+  .forms input {
+    width: 250px;
+  }
+  .forms .butn {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .forms {
+    margin-top: -150px;
+    height: 690px;
+  }
+  .forms input {
+    margin-top: 5px;
+  }
+}
+/*
+  ====================================================================
+  Oculus
+  ====================================================================
+*/
+.oculus div {
+  width: 33.333%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  text-align: center;
+  transition: transform .3s, opacity .3s;
+  opacity: .8;
+  cursor: pointer;
+  z-index: 2;
+  display: inline-block;
+  box-sizing: border-box;
+  float: left;
+}
+.oculus div:hover {
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+  z-index: 3;
+}
+.oculus .eve_valkyrie {
+  background-image: url("images/eve-valkyrie.jpg");
+}
+.oculus .luckys_tale {
+  background-image: url("images/luckys-tale.jpg");
+}
+.oculus .story {
+  background-image: url("images/oc3-stage-image.jpg");
+}
+.oculus h6 {
+  margin-top: 130px;
+  color: #a4a5a6;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+.oculus h4 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 800px) {
+  .oculus div {
+    display: block;
+    width: 100%;
+  }
+}
+/*
+  ====================================================================
+  Footer Apple
+  ====================================================================
+*/
+.apple {
+  background-color: #f2f2f2;
+  height: 700px;
+}
+.apple nav {
+  margin-right: -50px;
+}
+.apple nav p {
+  margin: 35px 0 0px 0;
+  font-weight: 600;
+  font-size: 12px;
+}
+.apple nav a {
+  color: #666;
+  font-size: 11.28205px;
+}
+.apple nav a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+.apple section .footer_line {
+  border-bottom: 1px solid #e3e3e3;
+  font-size: 11.28205px;
+}
+.apple section h6 {
+  color: #999;
+}
+.apple section span a {
+  font-size: 11.28205px;
+  color: #666;
+  border-right: 1px solid #d6d6d6;
+  margin-right: 10px;
+  padding-right: 12px;
+  white-space: nowrap;
+}
+.apple section span a:hover {
+  color: #666;
+}
+.apple section span a:first-child {
+  margin-left: 20px;
+}
+.apple section span a:last-child {
+  border: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .apple {
+    height: 1300px;
+  }
+  .apple section .footer_line {
+    border: 0;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .apple {
+    height: 1410px;
+  }
+  .apple nav {
+    margin-right: 10px;
+    padding: 0;
+  }
+  .apple nav p {
+    font-size: 10px;
+  }
+  .apple nav a {
+    font-size: 9.3617px;
+  }
+  .apple section {
+    float: left;
+  }
+  .apple section .footer_line {
+    font-size: 9.77778px;
+  }
+  .apple section span a {
+    font-size: 9.3617px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
