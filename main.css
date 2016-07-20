@@ -225,6 +225,16 @@ header img {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 1700px) {
+  .dropbox {
+    background-image: url("images/dropbox_main2.jpg");
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .dropbox {
+    background-image: url("images/dropbox_main1.jpg");
+  }
+}
 @media only screen and (max-width: 700px) {
   .dropbox {
     margin: 0 auto;
@@ -398,7 +408,7 @@ header img {
   line-height: 28px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 80px) {
   .oculus div {
     display: block;
     width: 100%;
