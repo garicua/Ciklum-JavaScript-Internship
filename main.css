@@ -224,7 +224,6 @@ header img {
 .dropbox h6 a {
   text-decoration: underline;
 }
-
 @media only screen and (max-width: 1700px) {
   .dropbox {
     background-image: url("images/dropbox_main2.jpg");
@@ -408,7 +407,7 @@ header img {
   line-height: 28px;
 }
 
-@media only screen and (max-width: 80px) {
+@media only screen and (max-width: 800px) {
   .oculus div {
     display: block;
     width: 100%;
